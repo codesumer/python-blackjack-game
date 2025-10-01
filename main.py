@@ -50,13 +50,9 @@ while True:
         compvalue= hand_value(compcards)
         if playervalue>21:
             print("BUST!")
-            print("Dealer cards:", f"{compcards[0][0]} of {compcards[0][1]}")
-            print("Dealer total:", compvalue)
             break
         elif playervalue==21:
             print("BLACKJACK!")
-            print("Dealer cards:", f"{compcards[0][0]} of {compcards[0][1]}")
-            print("Dealer total:", compvalue)
             break
         elif playervalue<21:
             a= str(input("HIT or STAND?:"))
